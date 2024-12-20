@@ -13,6 +13,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
 
+
 const storage = multer.diskStorage({
     destination: (req, file, callback) => {
       callback(null, 'img/');
